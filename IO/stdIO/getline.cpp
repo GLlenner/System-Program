@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+#include <string>
 
 int main() {
     char *line = NULL;
@@ -8,7 +10,7 @@ int main() {
 
     printf("请输入一行文本：\n");
 
-    nread = getline(&line, &len, stdin);
+    nread = std::getline();
     if (nread == -1) {
         perror("getline");
         free(line);

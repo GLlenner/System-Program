@@ -5,7 +5,8 @@
 - IO多路复用函数
   - [IO多路复用函数select](#IO多路复用函数select) 
   - [IO多路复用函数poll](#IO多路复用函数select)
-
+- [分散聚集函数](#分散聚集函数scattergather-io)
+- [内存映射](#内存映像函数-mmap)
 [最大缓存时效](#最大缓存时效)
 
 [同步IO与直接IO的区别?](#同步io与直接io的区别?)
@@ -26,10 +27,20 @@
 #### IO多路复用函数select
 1.  当文件阻塞时,通常我只能监视一个文件,而使用select可以监视多个文件描述符
 2.  如果多个连接到来，你需要开多个线程或进程（成本高、效率低）,而select效率高
-3.  [select 的使用](./select.cpp)
+3.  [select 的使用](./Multiplexing/select.cpp)
 
 
 #### IO多路复用函数select
 1.  同select
 2.  同select
-3.  [poll 的使用](./poll.cpp)
+3.  [poll 的使用](./Multiplexing/poll.cpp)
+  
+
+#### 分散聚集函数(Scatter/Gather I/O)
+1.  用户一次系统调用,能够对多个缓冲区进行读写
+2.  减少系统调用陷入内核的调用时间
+3.  `readv` `writev` [使用](./Scatter%20Gather%20IO/)
+  
+
+#### 内存映像函数 `mmap`
+1.  

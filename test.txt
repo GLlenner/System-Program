@@ -1,0 +1,16 @@
+C++23 and many TSes have been published,
+and work is now underway on more TSes and C++26 as shown below.
+Starting in 2012, the committee has transitioned to a “decoupled”
+model where major pieces of work can progress independently from 
+the Standard itself and be delivered in “feature branch” TSes. 
+Vendors can choose to implement these, and the community 
+can gain experience with the std::experimental version of each feature. 
+This lets us learn and adjust each feature’s design based on experience before 
+it is cast in stone when merged into the “trunk” C++ Standard itself. 
+In the meantime, the Standard can be delivered on a more 
+regular cadence with smaller and more predictable batches of features. 
+This approach also helps C++ compilers to track the Standard more closely 
+and add both the experimental and the draft-final C++ features in a more consistent order. 
+The current schedule is in paper P1000.
+Many TSes are focusing particularly on producing new C++ standard libraries; 
+to participate, see the instructions for how to Submit a Proposal.

@@ -1,0 +1,1 @@
+/* time() localtime() gettime() strftime() mktime()函数使用 */

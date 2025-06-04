@@ -4,7 +4,7 @@
 
 - IO多路复用函数
   - [IO多路复用函数select](#IO多路复用函数select) 
-  - [IO多路复用函数poll](#IO多路复用函数select)
+  - [IO多路复用函数poll](#IO多路复用函数poll)
 - [分散聚集函数](#分散聚集函数scattergather-io)
 - [内存映射](#内存映像函数-mmap)
 [最大缓存时效](#最大缓存时效)
@@ -30,7 +30,7 @@
 3.  [select 的使用](./Multiplexing/select.cpp)
 
 
-#### IO多路复用函数select
+#### IO多路复用函数poll
 1.  同select
 2.  同select
 3.  [poll 的使用](./Multiplexing/poll.cpp)
